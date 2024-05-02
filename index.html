@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS Scraper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RSS Scraper</h1>
+    </header>
+    <main>
+        <div class="bento-box container">
+            <div class="bento-box flex-container search-container">
+                <input class="text-put" type="text" id="urlInput" placeholder="Website URL">
+                <button class="button" onclick="scrapeRSS()" id="srcapeBtn">Scrape</button>
+            </div>
+            <div class="bento-box flex-container hidden loading-container" id="loadingContainer">
+                <div id="loadingBar" class="loading-bar"></div>
+            </div>
+            <div class="bento-box flex-container hidden result-container" id="resultContainer">
+                <output class="text-put" id="resultLinkContainer"></output>
+                <button class="button" onclick="copyToClipboard()" id="copyBtn">Copy</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Created by BAHITO</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
