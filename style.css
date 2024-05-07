@@ -2,7 +2,11 @@
 body {
   background-attachment: fixed;
   background-color: #000000;
+<<<<<<< HEAD
   background-image: url('./images/rss-wallpaper.jpeg');
+=======
+  background-image: url('/rss_scraper/images/rss-wallpaper.jpeg');
+>>>>>>> 065fb83 (Initial commit)
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -192,4 +196,8 @@ a:hover {
 
 .social-media{
   margin-top: -15px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 065fb83 (Initial commit)
