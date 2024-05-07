@@ -1,25 +1,10 @@
 function scrapeRSS() {
     const urlInput = document.getElementById('urlInput').value;
-    const loadingContainer = document.getElementById('loadingContainer');
-    const resultContainer = document.getElementById('resultContainer');
-
-    loadingContainer.style.display = 'block';
-    resultContainer.style.display = 'none';
-
-
-    setTimeout(() => {
-        const rssLink = 'https://example.com/rss';
-        const loadingContainer = document.getElementById('loadingContainer');
-        const resultContainer = document.getElementById('resultContainer');
-        const resultContent = document.getElementById('resultContent');
-        loadingContainer.style.display = 'none';
-        resultContainer.style.display = 'block';
-        resultContent.textContent = rssLink;
-    }, 3000);
-}
-
-function copyToClipboard() {
-    const rssLink = document.getElementById('resultContent').textContent;
-    navigator.clipboard.writeText(rssLink);
-    alert('RSS link copied to clipboard!');
+    fetch(`http://localhost:5000/scrape_rss?url=${encodeURIComponent(urlInput)}`)
+        .then(response => response.json())
+        .then(data => {
+            const outputArea = document.getElementById('outputArea');
+            outputArea.textContent = JSON.stringify(data, null, 2);
+        })
+        .catch(error => console.error('Error:', error));
 }
