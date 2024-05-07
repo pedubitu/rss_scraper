@@ -2,7 +2,7 @@
 body {
   background-attachment: fixed;
   background-color: #000000;
-  background-image: url('/images/rss-wallpaper.jpeg');
+  background-image: url('./images/rss-wallpaper.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
