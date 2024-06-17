@@ -29,7 +29,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 
-Copyright (c) 2024 pedrobahito
+Copyright (c) 2024 pedubitu
 
                                  Apache License
                            Version 2.0, January 2004
@@ -219,7 +219,7 @@ Copyright (c) 2024 pedrobahito
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright [2024] [pedrobahito]
+   Copyright [2024] [pedubitu]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
