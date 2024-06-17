@@ -15,10 +15,9 @@ body {
 }
 
 header, footer {
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   background: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(5px);
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -54,13 +53,12 @@ main {
   padding: 10px;
 }
 
-/* Glassmorphic Styles */
-.glassmorph {
+/* Glass Styles */
+.glass {
   border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   background: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 20px;
@@ -70,10 +68,9 @@ main {
 /* Progress Styles */
 progress {
   border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   background: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 100%;
@@ -97,6 +94,7 @@ progress {
 
 ::-webkit-progress-value {
   border-radius: 10px;
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   background: linear-gradient(45deg, 
   #ff000080, 
@@ -131,10 +129,9 @@ input[type="url"], output {
 
 /* Button Styles */
 button {
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(10px);
   border: none;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1), 0 17px 50px 0 rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.6);
